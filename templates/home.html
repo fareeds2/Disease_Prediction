@@ -1,0 +1,44 @@
+{%extends "layout.html"%}
+{%block content%}
+<style>
+    h2 {color: #000080;}
+      
+    a[href] {color: red;}
+
+    a:hover {color: rgb(237, 246, 237);}
+
+    
+    body {
+        background-image: url('/static/backgroundimage.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+        
+        
+</style>
+
+
+<div class="about">
+  <h1>Welcome to Our Disease Prediction website</h1>
+  <h3>This Machine Learning model predicts diseases based on provided details.<h3>
+</center>
+  
+<h4 style="color: white;">
+  <br/>This site offers the following disease prediction:<br/>
+</h4>
+    <ul>
+      <h2><a href="{{ url_for('diabetes') }}">Diabetes</a></h2>
+      <h2><a href="{{ url_for('parkinsons') }}">Parkinsons</a></h2>
+      <h2><a href="{{ url_for('heartdisease') }}">Heart Disease</h2></li>
+    </ul>
+  </h2>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h6>
+</div>
+{%endblock%}
